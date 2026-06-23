@@ -33,7 +33,7 @@ Instead of treating hazards statically, TalonAgent implements a dynamic **18-ste
 *   **Destruction-aware obstacles**: Grid boxes block blasts but are destroyed. The simulator tracks the precise step a box collapses, allowing explosions in subsequent steps to correctly propagate through the newly opened pathway.
 *   **Danger deadlines**: Compiles the simulation into a space-time hazard grid mapping coordinate safety deadlines.
 
-### 2. 4D Space-time pathfinding
+### 2. 3D Space-time pathfinding
 Standard 2D search is replaced with a **3D Space-time Dijkstra/BFS engine** (`_find_safe_path`):
 *   **Dynamic collision checking**: Verifies coordinate safety at the exact future step the agent intends to step on it.
 *   **Permanent safety verification**: The pathfinder only approves moves if it can prove a valid, uninterrupted survival path exists past the maximum active bomb timer. This prevents the agent from walking into dead ends.
