@@ -15,11 +15,11 @@ graph TD
     OBS[Game Observation State] --> Sync[1. Bomb & enemy tracking]
     Sync --> DangerSim[2. Forward danger simulator <br/> 18-Step chain propagation]
     DangerSim --> SpaceTimeBFS[3. 3D Space-time Dijkstra / BFS]
-    SpaceTimeBFS --> PriorityEngine[4. Multi-tiered Decision Engine]
+    SpaceTimeBFS --> PriorityEngine[4. Multi-tiered decision engine]
     PriorityEngine --> EscapeMode{Deadline <= 4?}
-    EscapeMode -- Yes --> EscapeAction[Escape / Kamikaze / Panic Fallback]
-    EscapeMode -- No --> CombatFarming[Combat Traps / Box Farming / Item Ambush]
-    EscapeAction --> Action[Final Action Selection]
+    EscapeMode -- Yes --> EscapeAction[Escape / Kamikaze / Panic fallback]
+    EscapeMode -- No --> CombatFarming[Combat traps / Box farming / Item ambush]
+    EscapeAction --> Action[Final action selection]
     CombatFarming --> Action
 ```
 
