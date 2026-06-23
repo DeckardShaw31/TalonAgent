@@ -1,2 +1,2 @@
 # TalonAgent
-A rule based agent for autonomous A.I challenge for GDGoC AI Challenge 2026
+A rule based agent that got the **top 5** in autonomous A.I challenge for GDGoC AI Challenge 2026 
