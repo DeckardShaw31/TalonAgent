@@ -12,10 +12,10 @@ TalonAgent uses a modular, real-time control system that prioritizes dynamic thr
 
 ```mermaid
 graph TD
-    Obs[Game Observation State] --> Sync[1. Bomb & Enemy Tracking]
-    Sync --> DangerSim[2. Forward Danger Simulator <br/> 18-Step Chain Propagation]
-    DangerSim --> SpaceTimeBFS[3. 3D Space-Time Dijkstra / BFS]
-    SpaceTimeBFS --> PriorityEngine[4. Multi-Tiered Decision Engine]
+    OBS[Game Observation State] --> Sync[1. Bomb & enemy tracking]
+    Sync --> DangerSim[2. Forward danger simulator <br/> 18-Step chain propagation]
+    DangerSim --> SpaceTimeBFS[3. 3D Space-time Dijkstra / BFS]
+    SpaceTimeBFS --> PriorityEngine[4. Multi-tiered Decision Engine]
     PriorityEngine --> EscapeMode{Deadline <= 4?}
     EscapeMode -- Yes --> EscapeAction[Escape / Kamikaze / Panic Fallback]
     EscapeMode -- No --> CombatFarming[Combat Traps / Box Farming / Item Ambush]
