@@ -8,7 +8,7 @@ A highly sophisticated, rule-based autonomous agent that achieved a **TOP 5** ra
 
 ## Architecture overview
 
-TalonAgent uses a modular, real-time control system that prioritizes dynamic threat evaluation and safe long-range search:
+Talon uses a modular, real-time control system that prioritizes dynamic threat evaluation and safe long-range search:
 
 ```mermaid
 graph TD
